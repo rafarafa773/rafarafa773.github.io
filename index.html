@@ -1,15 +1,54 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>site do rafa</title>
-    <link rel="icon" href="image.png">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>site do rafa</title>
+  <link rel="icon" href="image.png" />
+  <style>
+    #minhaImagem {
+      display: none;
+    }
+    #texto {
+      display: none;
+    }
+  </style>
 </head>
 <body>
-    <h1>Oi</h1>
-    <p>Mu nome é Rafael e eu nasci em 2013, estudo no Colégio Maria Auxiliadora e faço curso no Super Geeks</p>
-    <a href="https://brasilescola.uol.com.br/biologia/sistema-esqueletico.htm"><img src="O9Ev.gif" alt=""></a>
-    <h3>Clique no esqueleto acima!</h3>
+  <h1>Oi!</h1>
+
+  <button id="meuBotao">Clique aqui!</button>
+  <a target="_blank" id="minhaImagem" href="https://brasilescola.uol.com.br/biologia/sistema-esqueletico.htm">
+    <img src="O9Ev.gif" alt="" width="200"/>
+  </a>
+
+  <br><br>
+
+  <button id="clicar">Clique aqui tambem!</button>
+  <p id="texto">Oi! meu nome é Rafael</p>
+
+  <script>
+    const botao = document.getElementById("meuBotao");
+    const imagem = document.getElementById("minhaImagem");
+
+    botao.addEventListener("click", function() {
+      if (imagem.style.display === "none") {
+        imagem.style.display = "block"; // mostra
+      } else {
+        imagem.style.display = "none";  // esconde
+      }
+    });
+
+    const botao2 = document.getElementById("clicar");
+    const texto = document.getElementById("texto");
+
+    botao2.addEventListener("click", function() {
+      if (texto.style.display === "none") {
+        texto.style.display = "block"; // mostra
+      } else {
+        texto.style.display = "none";  // esconde
+      }
+    });
+  </script>
 </body>
 </html>
