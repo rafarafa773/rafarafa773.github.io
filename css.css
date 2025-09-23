@@ -1,0 +1,32 @@
+.imag {
+    width: 200px;
+    height: 120px;
+    object-fit: contain;
+    transition: 0.5s;
+    aspect-ratio: 1 / 1;
+}
+
+.imag:hover {
+    transform: scale(1.5);
+}
+
+.paises {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 10px;
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+}
